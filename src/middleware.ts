@@ -28,7 +28,7 @@ async function getRegionMap() {
     if (!regions) {
       notFound()
     }
-
+ 
     // Create a map of country codes to regions.
     regions.forEach((region: Region) => {
       region.countries.forEach((c) => {
