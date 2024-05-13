@@ -57,3 +57,6 @@ dump.rdb
 /playwright/.auth
 
 .vercel
+
+
+node_modules/
