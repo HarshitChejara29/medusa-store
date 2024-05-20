@@ -28,7 +28,7 @@ export async function getOrSetCart(countryCode: string) {
   let cart
 
   if (cartId) {
-    cart = await getCart(cartId).then((cart) => cart)
+    cart = await getCart(cartId).then((cart: any) => cart)
   }
 
   const region = await getRegion(countryCode)
@@ -67,7 +67,7 @@ export async function retrieveCart() {
   }
 
   try {
-    const cart = await getCart(cartId).then((cart) => cart)
+    const cart = await getCart(cartId).then((cart: any) => cart)
     return cart
   } catch (e) {
     console.log(e)
@@ -178,8 +178,8 @@ export async function enrichLineItems(
   // Enrich line items with product and variant information
 
   const enrichedItems = lineItems.map((item) => {
-    const product = products.find((p) => p.id === item.variant.product_id)
-    const variant = product?.variants.find((v) => v.id === item.variant_id)
+    const product = products.find((p: { id: any }) => p.id === item.variant.product_id)
+    const variant = product?.variants.find((v: { id: string | null }) => v.id === item.variant_id)
 
     // If product or variant is not found, return the original item
     if (!product || !variant) {

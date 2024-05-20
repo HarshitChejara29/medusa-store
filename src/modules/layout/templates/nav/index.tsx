@@ -4,19 +4,69 @@ import { listRegions } from "@lib/data"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
+import { User, ShoppingBag, MagnifyingGlassMini } from "@medusajs/icons"
+import { Badge } from "@medusajs/ui"
+import Marquee from "@modules/layout/components/Marquee"
+
 
 export default async function Nav() {
   const regions = await listRegions().then((regions: any) => regions)
 
   return (
     <div className="sticky top-0 inset-x-0 z-50 group">
-      <header className="relative h-16 mx-auto border-b duration-200 bg-white border-ui-border-base">
-        <nav className="content-container txt-xsmall-plus text-ui-fg-subtle flex items-center justify-between w-full h-full text-small-regular">
+      <div className="w-full mx-auto py-3 bg-[#edf2fa] font-medium ">
+      <Marquee>
+        <span className="w-full ml-auto">50% OFF MYSTERY BOX</span>
+        <span className="mr-auto">FREE $70 BUNDLE</span>
+      </Marquee>
+      </div>
+      <header className="relative h-16 mx-auto border-b duration-200 bg-[#001636] border-ui-border-base py-14">
+        <nav className="content-container txt-xsmall-plus text-ui-fg-subtle flex items-center justify-between w-full h-full text-small-regular text-white">
+          {/* <img src="./public/hero2.png" alt="hero2"/> */}
+
           <div className="flex-1 basis-0 h-full flex items-center">
             <div className="h-full">
               <SideMenu regions={regions} />
             </div>
           </div>
+
+
+
+          <div className="flex items-center text-white mr-auto text-sm font-semibold">
+            <LocalizedClientLink
+              href="/"
+              className="px-6"
+            >
+              {/* <Badge className="bg-[#ee702f] text-white border-none">Home</Badge> */}
+              Home
+            </LocalizedClientLink>
+            <LocalizedClientLink
+              href="/shop"
+              className="mr-6"
+            >
+              Shop All
+            </LocalizedClientLink>
+            <LocalizedClientLink
+              href="/rewards"
+              className="mr-6"
+            >
+              Rewards
+            </LocalizedClientLink>
+            <LocalizedClientLink
+              href="/ambassadors"
+              className="mr-6"
+            >
+              Ambassadors
+            </LocalizedClientLink>
+            <LocalizedClientLink
+              href="/contact"
+              className=""
+            >
+              Contact Us
+            </LocalizedClientLink>
+          </div>
+
+
 
           <div className="flex items-center h-full">
             <LocalizedClientLink
@@ -24,7 +74,7 @@ export default async function Nav() {
               className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
               data-testid="nav-store-link"
             >
-              Medusa Store
+              {/* Medusa Store */}
             </LocalizedClientLink>
           </div>
 
@@ -37,7 +87,8 @@ export default async function Nav() {
                   scroll={false}
                   data-testid="nav-search-link"
                 >
-                  Search
+                  {/* Search */}
+                  <MagnifyingGlassMini />
                 </LocalizedClientLink>
               )}
               <LocalizedClientLink
@@ -45,7 +96,8 @@ export default async function Nav() {
                 href="/account"
                 data-testid="nav-account-link"
               >
-                Account
+                {/* Account */}
+                <User/>
               </LocalizedClientLink>
             </div>
             <Suspense
@@ -56,6 +108,7 @@ export default async function Nav() {
                   data-testid="nav-cart-link"
                 >
                   Cart (0)
+                  <ShoppingBag/>
                 </LocalizedClientLink>
               }
             >
