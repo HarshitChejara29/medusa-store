@@ -12,7 +12,7 @@ const regionMapCache = {
 
 async function getRegionMap() {
   const { regionMap, regionMapUpdated } = regionMapCache
- 
+
   if (
     !regionMap.keys().next().value ||
     regionMapUpdated < Date.now() - 3600 * 1000
