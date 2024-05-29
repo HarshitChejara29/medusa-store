@@ -123,7 +123,7 @@ export default async function Home({
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Unmatched support and comfort with Valari</p>
           </div>
           <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-            <img alt="feature" className="object-cover object-center h-full w-full" src="https://dummyimage.com/460x500"/>
+            <Image alt="feature" className="object-cover object-center h-full w-full" width={100} height={100} src="https://dummyimage.com/460x500"/>
           </div>
           <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
             <div className="flex flex-row mb-10 lg:items-start items-center">
@@ -174,29 +174,29 @@ export default async function Home({
 
       <div className="p-4 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog"/>
+          <Image className="lg:h-48 md:h-36 w-full object-cover object-center" width={100} height={100} src="https://dummyimage.com/720x400" alt="blog"/>
           <div className="p-6 text-center">
             <h2 className="tracking-widest text-xs title-font font-bold text-gray-400 mb-1">CATEGORY</h2>
             <h1 className="title-font text-lg font-bold text-gray-900 mb-3">Deanna L.</h1>
-            <p className="leading-relaxed mb-3">This is the best purchase of my life honestly. I have a pinched nerve in my neck and carpal tunnel in both my wrists. For years, I've been trying to game with pillows tucked under my arms like I'm guarding a football. The Valari has changed everything for me!</p>
+            <p className="leading-relaxed mb-3">This is the best purchase of my life honestly. I have a pinched nerve in my neck and carpal tunnel in both my wrists. For years, I been trying to game with pillows tucked under my arms like I am guarding a football. The Valari has changed everything for me!</p>
           </div>
         </div>
       </div>
 
       <div className="p-4 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog"/>
+          <Image className="lg:h-48 md:h-36 w-full object-cover object-center" width={100} height={100} src="https://dummyimage.com/721x401" alt="blog"/>
           <div className="p-6 text-center">
             <h2 className="tracking-widest text-xs title-font font-bold text-gray-400 mb-1">CATEGORY</h2>
             <h1 className="title-font text-lg font-bold text-gray-900 mb-3">Nigel G.</h1>
-            <p className="leading-relaxed mb-3">Brilliant for gaming so comfortable and very supportive, has a lot more substance to it then using a pregnancy pillow or similar, use all the time for long periods of gaming and no discomfort in my wrists where I've had a previous injury.</p>
+            <p className="leading-relaxed mb-3">Brilliant for gaming so comfortable and very supportive, has a lot more substance to it then using a pregnancy pillow or similar, use all the time for long periods of gaming and no discomfort in my wrists where I had a previous injury.</p>
           </div>
         </div>
       </div>
 
       <div className="p-4 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog"/>
+          <Image className="lg:h-48 md:h-36 w-full object-cover object-center" width={100} height={100} src="https://dummyimage.com/722x402" alt="blog"/>
           <div className="p-6 text-center">
             <h2 className="tracking-widest text-xs title-font font-bold text-gray-400 mb-1">CATEGORY</h2>
             <h1 className="title-font text-lg font-bold text-gray-900 mb-3">Tom C.</h1>
@@ -276,7 +276,7 @@ export default async function Home({
 
     <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
       <h1 className="font-bold text-black text-2xl md:text-4xl">Valari Is For People Who Love...</h1>
-      <img alt="feature" className="object-cover object-center h-full w-full" src="https://dummyimage.com/460x500"/>
+      <Image alt="feature" className="object-cover object-center h-full w-full" width={100} height={100} src="https://dummyimage.com/460x500"/>
     </div>
 
   </div>
@@ -300,19 +300,19 @@ export default async function Home({
 
       <div className="p-1 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog"/>
+          <Image className="lg:h-48 md:h-36 w-full object-cover object-center" width={100} height={100} src="https://dummyimage.com/720x400" alt="blog"/>
         </div>
       </div>
 
       <div className="p-1 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog"/>
+          <Image className="lg:h-48 md:h-36 w-full object-cover object-center" width={100} height={100} src="https://dummyimage.com/721x401" alt="blog"/>
         </div>
       </div>
 
       <div className="p-1 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog"/>
+          <Image className="lg:h-48 md:h-36 w-full object-cover object-center" width={100} height={100} src="https://dummyimage.com/722x402" alt="blog"/>
         </div>
       </div>
     </div>
@@ -337,7 +337,7 @@ export default async function Home({
 
       <div className="p-4 md:w-1/4">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog"/>
+          <Image className="lg:h-48 md:h-36 w-full object-cover object-center" width={100} height={100} src="https://dummyimage.com/720x400" alt="blog"/>
           <div className="p-6 text-center">
             <h1 className="title-font text-lg font-bold text-gray-900 mb-3">Legendery Collection</h1>
             <h1 className="title-font text-lg font-bold mb-3 text-[#ee702f]">From $79.00 <span className="line-through text-sm text-black">$89.00</span></h1>
@@ -347,7 +347,7 @@ export default async function Home({
 
       <div className="p-4 md:w-1/4">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog"/>
+          <Image className="lg:h-48 md:h-36 w-full object-cover object-center" width={100} height={100} src="https://dummyimage.com/721x401" alt="blog"/>
           <div className="p-6 text-center">
             <h1 className="title-font text-lg font-bold text-gray-900 mb-3">Rare Collection</h1>
             <h1 className="title-font text-lg font-bold mb-3 text-[#ee702f]">$59.00 <span className="line-through text-sm text-black">$65.00</span></h1>
@@ -357,7 +357,7 @@ export default async function Home({
 
       <div className="p-4 md:w-1/4">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog"/>
+          <Image className="lg:h-48 md:h-36 w-full object-cover object-center" width={100} height={100} src="https://dummyimage.com/722x402" alt="blog"/>
           <div className="p-6 text-center">
             <h1 className="title-font text-lg font-bold text-gray-900 mb-3">Crafters Collection</h1>
             <h1 className="title-font text-lg font-bold mb-3 text-[#ee702f]">$79.00 <span className="line-through text-sm text-black">$89.00</span></h1>
@@ -367,7 +367,7 @@ export default async function Home({
 
       <div className="p-4 md:w-1/4">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog"/>
+          <Image className="lg:h-48 md:h-36 w-full object-cover object-center" width={100} height={100} src="https://dummyimage.com/722x402" alt="blog"/>
           <div className="p-6 text-center">
             <h1 className="title-font text-lg font-bold text-gray-900 mb-3">Epic (Customizable)</h1>
             <h1 className="title-font text-lg font-bold text-[#ee702f] mb-3 ">$114.00</h1>
@@ -420,19 +420,19 @@ export default async function Home({
 
       <div className="p-1 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog"/>
+          <Image className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" width={100} height={100} alt="blog"/>
         </div>
       </div>
 
       <div className="p-1 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog"/>
+          <Image className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" width={100} height={100} alt="blog"/>
         </div>
       </div>
 
       <div className="p-1 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog"/>
+          <Image className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" width={100} height={100} alt="blog"/>
         </div>
       </div>
     </div>

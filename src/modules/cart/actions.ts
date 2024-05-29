@@ -1,9 +1,12 @@
 "use server"
 
-import { LineItem } from "@medusajs/medusa"
-import { omit } from "lodash"
-import { revalidateTag } from "next/cache"
-import { cookies } from "next/headers"
+// import { LineItem } from "@medusajs/medusa"
+import { LineItem, Product } from "@medusajs/medusa";
+import { omit } from "lodash";
+import { revalidateTag } from "next/cache";
+import { cookies } from "next/headers";
+import { PricedProduct } from "@medusajs/medusa/dist/types/pricing";
+
 
 import {
   addItem,
@@ -15,6 +18,7 @@ import {
   updateCart,
   updateItem,
 } from "@lib/data"
+
 
 /**
  * Retrieves the cart based on the cartId cookie
@@ -177,13 +181,17 @@ export async function enrichLineItems(
 
   // Enrich line items with product and variant information
 
-  const enrichedItems = lineItems.map((item) => {
-    const product = products.find((p: { id: any }) => p.id === item.variant.product_id)
-    const variant = product?.variants.find((v: { id: string | null }) => v.id === item.variant_id)
+  //   const enrichedItems = lineItems.map((item) => {
+  //   const product = products.find((p: { id: any }) => p.id === item.variant.product_id)
+  //   const variant = product?.variants.find((v: { id: string | null }) => v.id === item.variant_id)
+    const enrichedItems = lineItems.map((item) => {
+    const product = products.find((p: PricedProduct) => p.id === item.variant.product_id);
+    const variant = product?.variants.find((v) => v.id === item.variant_id);
+
 
     // If product or variant is not found, return the original item
     if (!product || !variant) {
-      return item
+      return item;
     }
 
     // If product and variant are found, enrich the item
